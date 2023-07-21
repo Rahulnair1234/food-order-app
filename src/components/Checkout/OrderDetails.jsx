@@ -6,7 +6,7 @@ import classes from "./OrderDetails.module.css";
 
 const OrderDetails = (props) => {
   const cartCtx = useContext(CartContext);
-  const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`;
+  const totalAmount = `${cartCtx.totalAmount.toFixed(2)} ₹`;
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [didSubmit, setDidSubmit] = useState(false);
   const [orderId, setOrderId] = useState("");
